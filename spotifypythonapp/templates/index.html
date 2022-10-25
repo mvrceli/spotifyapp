@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+    <div class="css-3d-text">Spotify Playlist Mixer</div><br>
+
+    </head>
+        <body onload="init()">
+            <!-- <script src="{{url_for('static', filename='test.js')}}"></script> -->
+
+            <form class="grid" action="/result" method="POST">
+
+            <div class="css-3d-text2">Program selects a maximum of 100 songs from each playlist, then selects a random set of 50 songs from each to mix together</div><br>
+            
+            <div class="css-3d-text3">Enter your username:</div>
+            <input type="text" name="username" id="username" class="css-input"><br><br>
+
+            <div class="css-3d-text3">Enter your first playlist link:</div>
+            <input type="text" name="playlist_link1" id="playlist_link1" class="css-input"><br><br>
+
+            <div class="css-3d-text3">Enter your second playlist link:</div>
+            <input type="text" name="playlist_link2" id="playlist_link2" class="css-input"><br><br>
+
+            <input type="Submit" class="BUTTON_GEN">
+            
+            </form>
+
+        </body>
+
+
+
+</html>
